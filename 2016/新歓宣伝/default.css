@@ -1,0 +1,202 @@
+/*default*/
+
+section {
+  text-align: center;
+}
+section .inner {
+  width: 470px;
+  margin: auto;
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+}
+section .inner div {
+  opacity: 0;
+  -webkit-transform-origin: 0px 0px;
+  -ms-transform-origin: 0px 0px;
+  transform-origin: 0px 0px;
+  -webkit-animation-name: Drop;
+  animation-name: Drop;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+section h2 {
+  font-size: 50px;
+  font-size: 7rem;
+  padding: 125px 0;
+  font-weight: 100 !important;
+}
+#sakura {
+  color: #92405d;
+  background: #f9f1f4;
+  margin-bottom: 100px;
+}
+#sakura .inner div {
+  position: absolute;
+  display: block;
+  width: 15px;
+  height: 18px;
+  background: url("sakura.png") no-repeat;
+}
+#sakura .inner div.flake2 {
+  background-size: 5px 6px !important;
+}
+#sakura .inner div.flake4 {
+  background-size: 5px 6px !important;
+}
+#sakura .inner div.flake6 {
+  background-size: 10px 12px !important;
+}
+#sakura .inner div.flake8 {
+  background-size: 5px 6px !important;
+}
+#sakura .inner div.flake10 {
+  background-size: 5px 6px !important;
+}
+#sakura .inner div.flake12 {
+  background-size: 10px 12px !important;
+}
+#sakura .inner div.flake14 {
+  background-size: 5px 6px !important;
+}
+@-webkit-keyframes Drop {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(10px,85px);
+    transform: translate(10px,85px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translateY(20px,170px);
+    transform: translateY(20px,170px);
+    opacity: 0.3;
+  }
+}
+@keyframes Drop {
+  0% {
+    -webkit-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 0;
+  }
+  50% {
+    -webkit-transform: translate(10px,85px);
+    transform: translate(10px,85px);
+    opacity: 1;
+  }
+  100% {
+    -webkit-transform: translate(20px,170px);
+    transform: translate(20px,170px);
+    opacity: 0.3;
+  }
+}
+.flake1 {
+  left: 20px;
+  -webkit-animation-duration: 4.0s;
+  animation-duration: 4.0s;
+}
+.flake2 {
+  left: 45px;
+  -webkit-animation-duration: 4.4s;
+  animation-duration: 4.4s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.flake3 {
+  left: 70px;
+  -webkit-animation-duration: 4.8s;
+  animation-duration: 4.8s;
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+.flake4 {
+  left: 95px;
+  -webkit-animation-duration: 3.8s;
+  animation-duration: 3.8s;
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+}
+.flake5 {
+  left: 120px;
+  -webkit-animation-duration: 3.8s;
+  animation-duration: 3.8s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+.flake6 {
+  left: 150px;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.flake7 {
+  left: 170px;
+  -webkit-animation-duration: 4.4s;
+  animation-duration: 4.4s;
+  -webkit-animation-delay: 1.2s;
+  animation-delay: 1.2s;
+}
+.flake8 {
+  left: 205px;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 1.4s;
+  animation-delay: 1.4s;
+}
+.flake9 {
+  left: 225px;
+  -webkit-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.flake10 {
+  left: 255px;
+  -webkit-animation-duration: 3.8s;
+  animation-duration: 3.8s;
+  -webkit-animation-delay: 1.0s;
+  animation-delay: 1.0s;
+}
+.flake11 {
+  left: 280px;
+  -webkit-animation-duration: 3.5s;
+  animation-duration: 3.5s;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+.flake12 {
+  left: 300px;
+  -webkit-animation-duration: 4.2s;
+  animation-duration: 4.2s;
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+.flake13 {
+  left: 330px;
+  -webkit-animation-duration: 4.0s;
+  animation-duration: 4.0s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+.flake14 {
+left: 360px;
+-webkit-animation-duration: 3.8s;
+        animation-duration: 3.8s;
+-webkit-animation-delay: 1.0s;
+            animation-delay: 1.0s;
+}
+.flake15 {
+left: 405px;
+-webkit-animation-duration: 4.1s;
+        animation-duration: 4.1s;
+-webkit-animation-delay: 1.2s;
+            animation-delay: 1.2s;
+}

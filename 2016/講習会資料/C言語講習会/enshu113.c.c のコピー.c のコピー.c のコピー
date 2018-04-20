@@ -1,0 +1,54 @@
+#include <stdio>
+#define N 4
+
+int playerScore(int *);
+
+int main(void)
+{
+	char c;
+	int i,player;
+	int *p;
+	FILE *fp;
+	int time[N+1],score[N+1],life[N+1];
+	fp = fopen("high_score.txt","r");
+	for(i=0;i<N;i++){
+		scanf("%d %d %d",&time[i],&score[i],&life[i]);
+	}
+	if(fp == NULL) {
+		time[i] = 0;
+		score[i] = 0;
+		life[i] = 0;
+	}
+	else {
+		fscanf(fp,"%d %d %d",&time[i],&score[i],&life[i]);
+	}
+	fclose(fp);
+	printf("ƒ‚[ƒhF");
+	scanf(" %c",&c);
+	
+	if(c=='t') p=time;
+	else if(c=='s') p=score;
+	else if(c=='m') p=life;
+	
+	player = playerScore(p);
+	fp = fopen("high_score.txt","w");
+	fprintf(fp,"%d %d %d",time[player],score[player],life[player]);
+	fclose(fp);
+	
+	return 0;
+	
+}
+
+int playerScore(int h[]){
+	int max = h[0],number = 0,i;
+	for(i=1;i<N+1;i++){
+		if(max<h[i]){ 
+			max = h[i];
+			number = i;
+		}
+	}
+	return number;
+}
+	
+	
+	

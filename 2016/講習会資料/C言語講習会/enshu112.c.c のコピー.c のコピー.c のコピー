@@ -1,0 +1,17 @@
+
+#include <stdio.h>
+#include <string.h>
+#define N 256
+
+int main(void){
+	char str1[N],str2[N];
+	
+	scanf("%s%s", str1,str2);
+
+	if(strstr(str1,str2)==NULL) printf("None");
+	
+	else printf("%s",strstr(str1,str2));
+	
+	return 0;
+}
+	

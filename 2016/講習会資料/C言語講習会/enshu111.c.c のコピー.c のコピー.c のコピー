@@ -1,0 +1,40 @@
+#include <stdio.h>
+#define N 3
+
+typedef struct{
+	int jpn;
+	int eng;
+	int sci;
+}grade;
+
+void rank(grade);
+void hantei(int);
+
+int main(void)
+{
+	int i;
+	grade student[N];
+	
+	for(i=0;i<N;i++){
+		scanf("%d %d %d", &student[i].jpn, &student[i].eng, &student[i].sci);
+	}
+	
+	for(i=0;i<N;i++){
+		rank(student[i]);
+		printf("\n");
+	}
+
+	return 0;
+}
+
+void rank(grade g){
+	hantei(g.jpn);
+	hantei(g.eng);
+	hantei(g.sci);
+}
+
+void hantei(int s){
+	if(s>=80) printf("A ");
+	else if(s>=60) printf("B ");
+	else printf("C ");
+}
