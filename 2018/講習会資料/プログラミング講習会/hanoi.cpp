@@ -8,15 +8,15 @@
 /// @para:z ’†Œp‚Ég‚¤“ƒ
 void hanoi(int n, TowerOfHanoi &x, TowerOfHanoi &y, TowerOfHanoi &z) {
 
-	if (n == 0) return;
+	if (n == 0) return; // ˆÚ“®‚·‚é‰~”Õ‚ª‚È‚¢‚È‚çI—¹
 
-	hanoi(n - 1, x, z, y);
+	hanoi(n - 1, x, z, y); // ’êˆÈŠO‚ğz‚ÖˆÚ“®
 
-	move(x, y);
+	move(x, y); // ˆê”Ô’ê‚Ì‰~”Õ‚ğy‚ÉˆÚ“®
 
-	print_all(x, y, z);
+	print_all(x, y, z); 
 
-	hanoi(n - 1, z, y, x);
+	hanoi(n - 1, z, y, x); // z‚ğy‚Ìã‚É–ß‚·
 
 }
 
